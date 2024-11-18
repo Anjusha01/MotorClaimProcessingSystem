@@ -1,0 +1,537 @@
+﻿body
+{
+    /*background-color:#f0e8fa;*/
+}
+
+
+.form-grid
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (max-width: 768px)
+{
+    .form-grid
+    {
+        display: grid;
+        grid-template-columns: 1fr !important; 
+        grid-gap: 10px;
+    }
+}
+
+
+    .form-grid div
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-grid label
+    {
+        margin-bottom: 5px;
+        font-weight: 500;
+    }
+
+    .form-grid input
+    {
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .form-grid .full-width
+    {
+        grid-column: 1 / span 2;
+    }
+
+.btn-container
+{
+    grid-column: 1 / span 2;
+    text-align: center;
+}
+
+.status-icon
+{
+
+    width: 24px;
+    margin:5px;
+}
+
+.text-right
+{
+    text-align: right !important;
+}
+
+.table-bg tbody tr:first-child
+{
+    position: relative;
+    background: linear-gradient(160deg, #5f06a4,#460bf2, #15a4c4);
+    border: none;
+    color: white;
+    border-radius: 10px !important;
+}
+
+.table-bg 
+{
+    border: none;
+    border-radius: 10px;
+}
+.table-bg td
+{
+    border: none !important;
+   
+}
+.table th
+{
+    white-space: nowrap;
+}
+
+.table th, .table td
+{
+    text-align: left;
+    padding: 12px;
+}
+
+
+.table th
+{
+    border:none;
+    text-align: center !important;
+    color: white;
+    padding: 10px;
+    transition: background 0.3s ease;
+}
+
+
+.table td
+{
+    background-color: #fff;
+}
+
+.table-responsive
+{
+    margin-top: 20px;
+}
+
+.table tbody tr:hover
+{
+    background-color: #808080;
+}
+
+.table-border, .table-border td
+{
+    border: 1px solid #eed !important;
+}
+
+    .table-border th, .table-border td
+    {
+        padding: 8px;
+        text-align: center;
+    }
+
+.btn-dark
+{
+    background-color: #343a40;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px)
+{
+    .float-end
+    {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+.bg-nav
+{
+    
+    box-shadow: rgb(0 0 0 / 0.7) 0px 0px 20px 3px;
+    background-color: #fff;
+}
+
+    .bg-nav .nav-item
+    {
+        margin-top:10px;
+        margin-bottom:10px;
+        margin-left:15px;
+        position: relative;
+        transition: transform 0.3s;
+        font-style: normal;
+    }
+
+        .bg-nav .nav-link
+        {
+            color: #333 !important;
+            /*background-color: #5f06a4;*/
+            text-decoration: none;
+            font-style: normal !important;
+            font-weight:600;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin-left: 8px;
+            margin-right: 8px;
+            padding: 12px;
+            padding-left: 15px;
+            padding-right: 15px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+.nav-link:hover
+{
+    color: #fff !important;
+    background-color: #345676;
+    transform: scale(1.05);
+}
+
+
+
+.btn-logout
+{
+    align-items: center;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+}
+
+    .button-30:focus
+    {
+        box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    }
+
+    .button-30:hover
+    {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+        transform: translateY(-2px);
+    }
+
+    .button-30:active
+    {
+        box-shadow: #D6D6E7 0 3px 7px inset;
+        transform: translateY(2px);
+    }
+
+
+
+
+.bg-nav .dropdown-menu
+{
+    background-color: #345676;
+    transform: none;
+}
+
+    .bg-nav .dropdown-item
+    {
+        transform: none; 
+        font-style: normal; 
+    }
+
+@media (max-width: 991.98px)
+{ 
+    .bg-nav .nav-item . 
+    {
+        width:10rem;
+        transform: none; 
+    }
+}
+        
+ .navbar
+  {
+            padding: 0px !important;
+   }
+.dropdown-menu
+{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-nav .dropdown:hover .dropdown-menu
+{
+    display: block;
+    opacity: 1;
+}
+
+
+.btn-add
+{
+    background: linear-gradient(160deg,#0078d0,#5f06a4);
+    /*background-color: #0078d0;*/
+    border: 0;
+    border-radius: 56px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: system-ui,-apple-system,system-ui,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    outline: 0;
+    padding: 8px 14px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+    .btn-add:before
+    {
+        background-color: initial;
+        background-image: linear-gradient(#fff 0, rgba(255, 255, 255, 0) 100%);
+        border-radius: 125px;
+        content: "";
+        height: 50%;
+        left: 4%;
+        opacity: .5;
+        position: absolute;
+        top: 0;
+        transition: all .3s;
+        width: 92%;
+    }
+
+    .btn-add:hover
+    {
+        box-shadow: rgba(255, 255, 255, .2) 0 3px 15px inset, rgba(0, 0, 0, .1) 0 3px 5px, rgba(0, 0, 0, .1) 0 10px 13px;
+        transform: scale(1.05);
+    }
+
+@media (min-width: 768px) {
+    .btn-add
+    {
+        padding: 8px 16px;
+    }
+}
+
+     .btn-add .icon img{
+         width:24px;
+        
+     }
+
+    .btn-add .btn-text
+    {
+        text-align:center;
+        width:5rem;
+        padding: 10px;
+        color: #fff;
+    }
+
+
+
+.report-heading
+{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+
+.report-input
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.report-btn
+{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    font-size: 16px;
+}
+
+    .report-btn:hover
+    {
+        background-color: #0056b3;
+        border-color: #0056b3;
+    }
+
+.btn-back
+{
+    color: #fff;
+    padding: 15px 25px;
+    border-radius: 100px;
+    background-color: #4C43CD;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+}
+.btn-back:hover{
+    transform:scale(0.9);
+}
+.button-action
+{
+    margin:5px;
+    align-items: center;
+    border: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-family: "Codec cold",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    height: 54px;
+    justify-content: center;
+    letter-spacing: .4px;
+    line-height: 1;
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 3px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+    .button-action:active
+    {
+        outline: 0;
+    }
+
+    .button-action:hover
+    {
+        outline: 0;
+    }
+
+    .button-action
+    {
+        transition: all 200ms;
+    }
+
+    .button-action:hover
+    {
+        transform: scale(1.05);
+        opacity: .75;
+    }
+
+@media screen and (max-width: 991px)
+{
+    .button-action
+    {
+        font-size: 15px;
+        height: 50px;
+    }
+
+        .button-action span
+        {
+            line-height: 50px;
+        }
+}
+
+
+.btn-save-color
+{
+    background: rgb(206,4,251);
+    background: linear-gradient(90deg, rgba(206,4,251,1) 0%, rgba(77,67,255,1) 100%);
+}
+
+.btn-add-color
+{
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+}
+.btn-update-color
+{
+    background: rgb(226,147,153);
+    background: linear-gradient(90deg, rgba(226,147,153,1) 0%, rgba(77,67,255,1) 100%);
+}
+.btn-approve-color
+{
+    background-image: linear-gradient(135deg, #f34079 40%, #fc894d);
+}
+.btn-close-color
+{
+    background: rgb(225,223,226);
+    background: linear-gradient(90deg, rgba(225,223,226,1) 0%, rgba(100,97,153,1) 100%);
+}
+
+
+/* GridView pagination styling */
+.gridview-pagination
+{
+    border:none !important;
+    text-align: center;
+    margin-top: 10px;
+}
+
+    .gridview-pagination a, .gridview-pagination span
+    {
+        color: #333;
+        text-decoration: none;
+        margin: 0 2px;
+    }
+
+        .gridview-pagination a:hover
+        {
+            color: #007bff;
+            text-decoration-style: solid;
+            text-decoration-color: #007bff;
+            text-decoration: underline;
+            border-color: #007bff;
+        }
+
+    .gridview-pagination .selected-page
+    {
+        background-color: #007bff;
+        color: white;
+        border-color: #007bff;
+        font-weight: bold;
+    }
+
+    .gridview-pagination .disabled-page
+    {
+        color: #ccc;
+        cursor: default;
+        border-color: #ddd;
+    }
+

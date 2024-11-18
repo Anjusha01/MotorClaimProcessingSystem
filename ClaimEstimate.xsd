@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ClaimEstimate" targetNamespace="http://tempuri.org/ClaimEstimate.xsd" xmlns:mstns="http://tempuri.org/ClaimEstimate.xsd" xmlns="http://tempuri.org/ClaimEstimate.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Web.config)" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ConnectionString.ConnectionString" Provider="System.Data.OracleClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ClaimEstimate" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ClaimEstimate" msprop:Generator_UserDSName="ClaimEstimate">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ClaimEstimate" msprop:Generator_TableClassName="ClaimEstimateDataTable" msprop:Generator_TableVarName="tableClaimEstimate" msprop:Generator_TablePropName="_ClaimEstimate" msprop:Generator_RowDeletingName="ClaimEstimateRowDeleting" msprop:Generator_RowChangingName="ClaimEstimateRowChanging" msprop:Generator_RowEvHandlerName="ClaimEstimateRowChangeEventHandler" msprop:Generator_RowDeletedName="ClaimEstimateRowDeleted" msprop:Generator_UserTableName="ClaimEstimate" msprop:Generator_RowChangedName="ClaimEstimateRowChanged" msprop:Generator_RowEvArgName="ClaimEstimateRowChangeEvent" msprop:Generator_RowClassName="ClaimEstimateRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="POL_FM_DT" msprop:Generator_ColumnVarNameInTable="columnPOL_FM_DT" msprop:Generator_ColumnPropNameInRow="POL_FM_DT" msprop:Generator_ColumnPropNameInTable="POL_FM_DTColumn" msprop:Generator_UserColumnName="POL_FM_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="POL_TO_DT" msprop:Generator_ColumnVarNameInTable="columnPOL_TO_DT" msprop:Generator_ColumnPropNameInRow="POL_TO_DT" msprop:Generator_ColumnPropNameInTable="POL_TO_DTColumn" msprop:Generator_UserColumnName="POL_TO_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="POL_NO" msprop:Generator_ColumnVarNameInTable="columnPOL_NO" msprop:Generator_ColumnPropNameInRow="POL_NO" msprop:Generator_ColumnPropNameInTable="POL_NOColumn" msprop:Generator_UserColumnName="POL_NO" type="xs:string" minOccurs="0" />
+              <xs:element name="POL_ASSR_NAME" msprop:Generator_ColumnVarNameInTable="columnPOL_ASSR_NAME" msprop:Generator_ColumnPropNameInRow="POL_ASSR_NAME" msprop:Generator_ColumnPropNameInTable="POL_ASSR_NAMEColumn" msprop:Generator_UserColumnName="POL_ASSR_NAME" type="xs:string" minOccurs="0" />
+              <xs:element name="POL_ASSR_ADDRESS" msprop:Generator_ColumnVarNameInTable="columnPOL_ASSR_ADDRESS" msprop:Generator_ColumnPropNameInRow="POL_ASSR_ADDRESS" msprop:Generator_ColumnPropNameInTable="POL_ASSR_ADDRESSColumn" msprop:Generator_UserColumnName="POL_ASSR_ADDRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="VEHICLE_MAKE" msprop:Generator_ColumnVarNameInTable="columnVEHICLE_MAKE" msprop:Generator_ColumnPropNameInRow="VEHICLE_MAKE" msprop:Generator_ColumnPropNameInTable="VEHICLE_MAKEColumn" msprop:Generator_UserColumnName="VEHICLE_MAKE" type="xs:string" minOccurs="0" />
+              <xs:element name="CLM_LOSS_TYPE" msprop:Generator_ColumnVarNameInTable="columnCLM_LOSS_TYPE" msprop:Generator_ColumnPropNameInRow="CLM_LOSS_TYPE" msprop:Generator_ColumnPropNameInTable="CLM_LOSS_TYPEColumn" msprop:Generator_UserColumnName="CLM_LOSS_TYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="POL_VEH_MODEL" msprop:Generator_ColumnVarNameInTable="columnPOL_VEH_MODEL" msprop:Generator_ColumnPropNameInRow="POL_VEH_MODEL" msprop:Generator_ColumnPropNameInTable="POL_VEH_MODELColumn" msprop:Generator_UserColumnName="POL_VEH_MODEL" type="xs:string" minOccurs="0" />
+              <xs:element name="CE_EST_VAL_LC_AMT" msprop:Generator_ColumnVarNameInTable="columnCE_EST_VAL_LC_AMT" msprop:Generator_ColumnPropNameInRow="CE_EST_VAL_LC_AMT" msprop:Generator_ColumnPropNameInTable="CE_EST_VAL_LC_AMTColumn" msprop:Generator_UserColumnName="CE_EST_VAL_LC_AMT" type="xs:string" minOccurs="0" />
+              <xs:element name="CE_EST_LC_AMT" msprop:Generator_ColumnVarNameInTable="columnCE_EST_LC_AMT" msprop:Generator_ColumnPropNameInRow="CE_EST_LC_AMT" msprop:Generator_ColumnPropNameInTable="CE_EST_LC_AMTColumn" msprop:Generator_UserColumnName="CE_EST_LC_AMT" type="xs:string" minOccurs="0" />
+              <xs:element name="CE_PAID_LC_AMT" msprop:Generator_ColumnVarNameInTable="columnCE_PAID_LC_AMT" msprop:Generator_ColumnPropNameInRow="CE_PAID_LC_AMT" msprop:Generator_ColumnPropNameInTable="CE_PAID_LC_AMTColumn" msprop:Generator_UserColumnName="CE_PAID_LC_AMT" type="xs:string" minOccurs="0" />
+              <xs:element name="POL_ISS_DT" msprop:Generator_ColumnVarNameInTable="columnPOL_ISS_DT" msprop:Generator_ColumnPropNameInRow="POL_ISS_DT" msprop:Generator_ColumnPropNameInTable="POL_ISS_DTColumn" msprop:Generator_UserColumnName="POL_ISS_DT" type="xs:string" minOccurs="0" />
+              <xs:element name="CLM_NO" msprop:Generator_ColumnVarNameInTable="columnCLM_NO" msprop:Generator_ColumnPropNameInRow="CLM_NO" msprop:Generator_ColumnPropNameInTable="CLM_NOColumn" msprop:Generator_UserColumnName="CLM_NO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
